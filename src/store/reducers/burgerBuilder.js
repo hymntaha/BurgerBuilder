@@ -1,4 +1,4 @@
-import * as actionTypes from "./actions";
+import * as actionTypes from "../actions/actions";
 
 
 
@@ -20,7 +20,7 @@ const INGREDIENT_PRICES = {
 };
 
 
-const reducer = (state = initialState, action) => {
+const burgerBuilder = (state = initialState, action) => {
   switch (action.type){
     case actionTypes.ADD_INGREDIENT:
       return {
@@ -45,5 +45,5 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-export default reducer;
+export default burgerBuilder;
 

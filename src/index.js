@@ -8,10 +8,10 @@ import { createStore } from "redux";
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import reducer from "./store/reducer";
+import burgerBuilder from "./store/reducers/reducer";
 
 const store = createStore(
-  reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  burgerBuilder, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 const app = (
