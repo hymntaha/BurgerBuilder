@@ -6,6 +6,9 @@ import Spinner from '../../../components/UI/Spinner/Spinner';
 import classes from './ContactData.css';
 import axios from '../../../axios-orders';
 import Input from '../../../components/UI/Input/Input';
+import withErrorHandler from "../../../hoc/withErrorHandler/withErrorHandler";
+
+
 
 class ContactData extends Component {
     state = {
