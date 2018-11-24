@@ -27,6 +27,7 @@ class Checkout extends Component {
 
           summary = (
             <div>
+              {purchasedRedirect}
               <CheckoutSummary
                 ingredients={this.props.ings}
                 checkoutCancelled={this.checkoutCancelledHandler}
@@ -48,10 +49,4 @@ const mapStateToProps = state => {
     }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    onInitPurchase: () => dispatch(actions.purchaseInit())
-  }
-}
-
-export default connect(mapStateToProps,mapDispatchToProps)(Checkout);
+export default connect(mapStateToProps)(Checkout);
