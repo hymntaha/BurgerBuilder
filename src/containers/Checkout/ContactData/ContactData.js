@@ -206,4 +206,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(withErrorHandler(ContactData));
+export default connect(mapStateToProps)(withErrorHandler(ContactData, axios));
